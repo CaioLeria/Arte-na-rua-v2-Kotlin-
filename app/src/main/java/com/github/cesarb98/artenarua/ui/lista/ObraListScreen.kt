@@ -1,0 +1,30 @@
+package com.github.cesarb98.artenarua.ui.lista
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import com.github.cesarb98.artenarua.R
+
+@Composable
+fun ObraListScreen(
+    onAbrirObra: (Long) -> Unit,
+    onCadastrar: () -> Unit,
+    obraCadastrada: Boolean,
+    onObraCadastradaExibida: () -> Unit
+) {
+    Column(
+        Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(stringResource(R.string.lista_titulo))
+        Button(onClick = { onAbrirObra(1) }) { Text(stringResource(R.string.detalhe_a_obra)) }
+        Button(onClick = onCadastrar) { Text(stringResource(R.string.lista_cadastrar)) }
+    }
+}
