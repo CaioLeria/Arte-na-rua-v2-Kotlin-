@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Arte na Rua</string>
+
+    <!-- Navegação -->
+    <string name="aba_home">Home</string>
+    <string name="aba_obras">Obras</string>
+    <string name="voltar">Voltar</string>
+
+    <!-- Home -->
+    <string name="home_frase">Conheça, guarde e comente a arte urbana de São Paulo</string>
+    <string name="home_o_que_e_titulo">O que é</string>
+    <string name="home_o_que_e_texto">Um catálogo pessoal de arte urbana de São Paulo. A arte de rua é patrimônio cultural da cidade, mas é efêmera e pouco documentada: aqui você encontra o artista, a história, o período e o local de cada obra, tudo guardado no seu aparelho.</string>
+    <string name="home_para_quem_titulo">Para quem é</string>
+    <string name="home_para_quem_texto">Moradores e visitantes de São Paulo interessados em cultura urbana, estudantes e turistas que querem conhecer e guardar suas obras preferidas.</string>
+    <string name="home_o_que_fazer_titulo">O que você pode fazer</string>
+    <string name="home_fazer_explorar">Explorar obras</string>
+    <string name="home_fazer_favoritar">Favoritar as que mais gosta</string>
+    <string name="home_fazer_registrar">Registrar seus comentários e novas obras</string>
+    <string name="home_ods">ODS 11 — Cidades e Comunidades Sustentáveis</string>
+    <string name="home_ver_obras">Ver obras</string>
+
+    <!-- Listagem -->
+    <string name="lista_titulo">Obras</string>
+    <string name="lista_cadastrar">Cadastrar obra</string>
+    <string name="filtro_todas">Todas</string>
+    <string name="filtro_favoritas">Favoritas</string>
+    <string name="lista_vazia_todas">Nenhuma obra por aqui ainda. Toque em + para cadastrar.</string>
+    <string name="lista_vazia_favoritas">Você ainda não favoritou nenhuma obra.</string>
+    <string name="favoritar">Favoritar</string>
+    <string name="remover_favorito">Remover dos favoritos</string>
+    <string name="obra_cadastrada">Obra cadastrada</string>
+    <string name="imagem_da_obra">Imagem da obra %1$s</string>
+
+    <!-- Detalhe -->
+    <string name="detalhe_a_obra">A obra</string>
+    <string name="detalhe_tecnica">Técnica</string>
+    <string name="detalhe_periodo">Quando foi feita</string>
+    <string name="detalhe_local">Local</string>
+    <string name="detalhe_o_artista">O artista</string>
+    <string name="detalhe_historia">História</string>
+    <string name="detalhe_meu_comentario">Meu comentário</string>
+    <string name="detalhe_sem_comentario">Você ainda não comentou esta obra</string>
+    <string name="detalhe_adicionar_comentario">Adicionar comentário</string>
+    <string name="detalhe_campo_comentario">Seu comentário</string>
+    <string name="editar">Editar</string>
+    <string name="remover">Remover</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="detalhe_nao_encontrada">Obra não encontrada</string>
+    <string name="contador_caracteres">%1$d/%2$d</string>
+
+    <!-- Cadastro -->
+    <string name="cadastro_titulo">Nova obra</string>
+    <string name="campo_titulo">Nome da obra *</string>
+    <string name="campo_artista">Autor *</string>
+    <string name="campo_historia">História *</string>
+    <string name="campo_periodo">Quando foi feita</string>
+    <string name="campo_local">Bairro / endereço</string>
+    <string name="campo_tecnica">Técnica</string>
+    <string name="cadastro_obrigatorios">* Campos obrigatórios</string>
+</resources>
