@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="200dp"
+    android:viewportWidth="320"
+    android:viewportHeight="200">
+    <!-- Muro -->
+    <path
+        android:fillColor="#BBC5AA"
+        android:pathData="M0,0h320v200h-320z" />
+    <!-- Tijolos -->
+    <path
+        android:strokeColor="#DDE2C6"
+        android:strokeWidth="2"
+        android:pathData="M0,40H320 M0,80H320 M0,120H320 M0,160H320 M40,0V40 M120,0V40 M200,0V40 M280,0V40 M80,40V80 M160,40V80 M240,40V80 M40,80V120 M120,80V120 M200,80V120 M280,80V120 M80,120V160 M160,120V160 M240,120V160 M40,160V200 M120,160V200 M200,160V200 M280,160V200" />
+    <!-- Lata de spray -->
+    <path
+        android:fillColor="#A72608"
+        android:pathData="M142,82h36a6,6 0,0 1,6 6v62a6,6 0,0 1,-6 6h-36a6,6 0,0 1,-6 -6v-62a6,6 0,0 1,6 -6z" />
+    <path
+        android:fillColor="#090C02"
+        android:pathData="M148,68h24v14h-24z M155,56h10v12h-10z" />
+    <path
+        android:fillColor="#E6EED6"
+        android:pathData="M136,102h48v22h-48z" />
+    <!-- Jato -->
+    <path
+        android:fillColor="#A72608"
+        android:pathData="M176,58a3,3 0,1 0,6 0a3,3 0,1 0,-6 0z M190,50a3,3 0,1 0,6 0a3,3 0,1 0,-6 0z M190,64a3,3 0,1 0,6 0a3,3 0,1 0,-6 0z M204,42a3,3 0,1 0,6 0a3,3 0,1 0,-6 0z M204,57a3,3 0,1 0,6 0a3,3 0,1 0,-6 0z M204,72a3,3 0,1 0,6 0a3,3 0,1 0,-6 0z" />
+</vector>

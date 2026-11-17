@@ -1,0 +1,94 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "6d1a7c0e18a50c7a62e06c34873c4f11",
+    "entities": [
+      {
+        "tableName": "obras",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `titulo` TEXT NOT NULL, `artista` TEXT NOT NULL, `historia` TEXT NOT NULL, `periodo` TEXT, `local` TEXT, `tecnica` TEXT, `imagemNome` TEXT, `favorita` INTEGER NOT NULL, `comentario` TEXT, `criadaPeloUsuario` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "titulo",
+            "columnName": "titulo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "artista",
+            "columnName": "artista",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "historia",
+            "columnName": "historia",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "periodo",
+            "columnName": "periodo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "local",
+            "columnName": "local",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tecnica",
+            "columnName": "tecnica",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imagemNome",
+            "columnName": "imagemNome",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "favorita",
+            "columnName": "favorita",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "comentario",
+            "columnName": "comentario",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "criadaPeloUsuario",
+            "columnName": "criadaPeloUsuario",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '6d1a7c0e18a50c7a62e06c34873c4f11')"
+    ]
+  }
+}
