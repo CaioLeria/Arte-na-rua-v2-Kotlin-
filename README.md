@@ -6,7 +6,8 @@ Aplicativo Android (Kotlin + Jetpack Compose) que funciona como um **catálogo p
 
 | Nome completo | RM |
 |---|---|
-| _preencher_ | _preencher_ |
+|Caio Vinicius Magalhães Leria | 557833 |
+|Cesar Brasil Alves | 556236 |
 
 ## Problema, público e proposta
 
