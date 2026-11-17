@@ -27,6 +27,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import kotlinx.coroutines.launch
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -54,10 +56,13 @@ fun ObraListScreen(
     val mensagemCadastrada = stringResource(R.string.obra_cadastrada)
 
     // Resultado vindo do cadastro: mostra o Snackbar uma vez e limpa a chave.
+    // O Snackbar roda em um escopo próprio: limpar a chave muda o parâmetro do
+    // LaunchedEffect, o que cancelaria um showSnackbar chamado direto aqui dentro.
+    val escopo = rememberCoroutineScope()
     LaunchedEffect(obraCadastrada) {
         if (obraCadastrada) {
+            escopo.launch { snackbarHostState.showSnackbar(mensagemCadastrada) }
             onObraCadastradaExibida()
-            snackbarHostState.showSnackbar(mensagemCadastrada)
         }
     }
 

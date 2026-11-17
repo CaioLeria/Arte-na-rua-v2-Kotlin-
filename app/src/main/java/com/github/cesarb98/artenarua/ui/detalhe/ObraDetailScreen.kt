@@ -35,6 +35,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import kotlinx.coroutines.launch
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -58,10 +60,14 @@ fun ObraDetailScreen(
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val snackbarHostState = remember { SnackbarHostState() }
 
+    val escopo = rememberCoroutineScope()
+
+    // O Snackbar roda em um escopo próprio: consumir a mensagem muda a chave do
+    // LaunchedEffect, o que cancelaria um showSnackbar chamado direto aqui dentro.
     LaunchedEffect(uiState.mensagem) {
         uiState.mensagem?.let { mensagem ->
+            escopo.launch { snackbarHostState.showSnackbar(mensagem) }
             viewModel.mensagemExibida()
-            snackbarHostState.showSnackbar(mensagem)
         }
     }
 
