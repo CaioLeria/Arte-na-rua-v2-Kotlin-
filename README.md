@@ -120,3 +120,7 @@ O **+** da listagem abre o cadastro. Com campos obrigatórios vazios, cada um mo
 Depois de fechar o app por completo (`force-stop`) e abrir de novo, os favoritos, a obra cadastrada e o comentário continuam lá (compare com os prints 04, 13 e 09).
 
 <img src="docs/prints/14-apos-reabrir-favoritos.png" width="240"> <img src="docs/prints/15-apos-reabrir-obra-nova.png" width="240"> <img src="docs/prints/16-apos-reabrir-comentario.png" width="240">
+
+## 6. Video demonstrativo 
+
+https://drive.google.com/file/d/1wPo0pDfteir6ke6DmZSJOg1XwYZo3ByG/view?usp=sharing
